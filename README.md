@@ -20,3 +20,7 @@ mdbook build
 ```shell
 mdbook build -o
 ```
+
+```shell
+mdbook build -d docs
+```
