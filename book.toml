@@ -1,0 +1,10 @@
+[book]
+authors = ["knewjade"]
+language = "en"
+multilingual = false
+src = "src"
+title = "bitris-docs"
+
+[preprocessor.embed]
+command = "cargo run --release --bin mdbook-embed"
+renderers = ["html"]

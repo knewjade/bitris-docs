@@ -1,0 +1,16 @@
+[package]
+name = "bitris-docs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bitris = { git = "https://github.com/knewjade/bitris.git", rev = "b75bdf087eea14f4729c57df75fe20c512fbf5ea" }
+bitris_commands = { git = "https://github.com/knewjade/bitris-commands.git", rev = "2a432cba260c227137283abf4c5631b3707cb7e9" }
+clap = { version = "4.4.18", features = ["string"]}
+mdbook = "0.4.37"
+serde_json = "1.0.113"
+regex = "1.10.3"
+
+[[bin]]
+name = "mdbook-embed"
+path = "src/preprocessors/mdbook_embed.rs"
